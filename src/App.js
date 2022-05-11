@@ -1,7 +1,5 @@
 import React, {
-  useEffect,
-  lazy,
-  Suspense
+  useEffect
 } from "react";
 
 import {
@@ -11,7 +9,6 @@ import {
 } from "react-router-dom";
 
 import Home from './pages/Home'
-import { UserProvider } from "./context/user/UserContext";
 import './App.css';
 
 function App() {
@@ -21,16 +18,12 @@ function App() {
 
 
   return (
-    <UserProvider>
-      <Suspense fallback={<h5>loading route</h5>}>
-        <Router>
-          <Routes>
-            <Route exact path='/' element={<Home />} />
+    <Router>
+      <Routes>
+        <Route exact path='/' element={<Home />} />
 
-          </Routes>
-        </Router>
-      </Suspense>
-    </UserProvider>
+      </Routes>
+    </Router>
   );
 }
 

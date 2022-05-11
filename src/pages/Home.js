@@ -117,7 +117,6 @@ function Home() {
 
       </Col>
 
-
     </Row>
 
   )
