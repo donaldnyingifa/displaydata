@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  font-size: calc(7px + 2vmin);
+  /* color: white; */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.footer-text {
+  width: 100%;
+  text-align: center;
+  padding-left: 10vw;
+  color: #fbf9f9;
+  /* background-color: #242222; */
+  font-size: larger;
+}
+
+.home {
+  min-height: 70Vh;
+}
+
+.footer {
+  background-color: #0090d4;
+  overflow-x: hidden;
+  margin-top: 5px;
+}
+
+
